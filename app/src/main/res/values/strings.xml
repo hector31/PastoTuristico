@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pasto Turistico</string>
+    <string name="iniciarSes">Iniciar Sesion</string>
+    <string name="ciudad">Pasto</string>
+    <string name="Recontraseña">Repetir Contraseña</string>
+    <string name="contraseña">contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="usuario">Usuario</string>
+</resources>
