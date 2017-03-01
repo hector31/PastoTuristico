@@ -3,6 +3,7 @@ package com.example.android.pastoturistico;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText eUsuario, ePassword;
     Button bIniciar;
     TextView tRegistrarse;
-    String usuario="",contraseña="";
+    String usuario="",contraseña="",correo="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (eUsuario.getText().toString().equals(usuario) && ePassword.getText().toString().equals(contraseña)){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    intent.putExtra("usuario",usuario);
+                    intent.putExtra("correo",correo);
                     startActivity(intent);
                 }
             }
@@ -55,7 +58,9 @@ public class LoginActivity extends AppCompatActivity {
         if (requestCode==1234 && resultCode==RESULT_OK){
             usuario = data.getExtras().getString("usuario");
             contraseña = data.getExtras().getString("contraseña");
-            // Toast.makeText(this, data.getExtras().getString("username"),Toast.LENGTH_SHORT).show();
+            correo=data.getExtras().getString("correo");
+            Log.d("nombre",data.getExtras().getString("usuario"));//para saber si esta pasando por consola los datos
+            //Toast.makeText(this, data.getExtras().getString("usuario"),Toast.LENGTH_SHORT).show();
         }
         if (requestCode == 1234 && resultCode==RESULT_CANCELED){
             Toast.makeText(this, "Error en login",Toast.LENGTH_SHORT).show();

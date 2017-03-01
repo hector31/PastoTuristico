@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
     android:orientation="vertical"
     tools:context="com.example.android.pastoturistico.LoginActivity">
 
@@ -48,7 +49,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/iniciar"
-        android:background="@color/lightblue"
+        android:background="@color/powderblue"
         android:text="@string/iniciarSes"/>
     <TextView
         android:layout_width="match_parent"

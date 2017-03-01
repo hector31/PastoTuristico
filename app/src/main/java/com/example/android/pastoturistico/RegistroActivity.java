@@ -1,6 +1,6 @@
 package com.example.android.pastoturistico;
 
-import android.content.Intent;
+    import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,16 +41,20 @@ public class RegistroActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent();
+                if(econtraseña.getText().toString().equals("")||ecorreo.getText().toString().equals("")||eusuario.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),"uno o mas campos estan vacios",Toast.LENGTH_SHORT).show();
+                }
                 if(!(econtraseña.getText().toString().equals(erecontraseña.getText().toString()))){
                     Toast.makeText(getApplicationContext(),"las contraseñas no coinciden",Toast.LENGTH_SHORT).show();
                 }
-                if(econtraseña.getText().toString().equals(erecontraseña.getText().toString())) {
+                if(econtraseña.getText().toString().equals(erecontraseña.getText().toString())&& !econtraseña.getText().toString().equals("")) {
                     intent.putExtra("usuario", eusuario.getText().toString());
                     intent.putExtra("contraseña", econtraseña.getText().toString());
                     intent.putExtra("correo", ecorreo.getText().toString());
                     setResult(RESULT_OK, intent);
                     finish();
                 }
+
 
             }
         });

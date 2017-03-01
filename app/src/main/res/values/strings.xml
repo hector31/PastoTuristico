@@ -8,4 +8,14 @@
     <string name="registrarse">Registrarse</string>
     <string name="cancelar">Cancelar</string>
     <string name="usuario">Usuario</string>
+    <string name="salir">SALIR</string>
+    <string name="perfil">PERFIL</string>
+    <string name="principal">PRINCIPAL</string>
+    <string name="usuarioo">Usuario:</string>
+    <string name="correoo">Correo:</string>
+    <string name="Lugares">Lugares Representativos</string>
+    <string name="Volcan1">Volcan Galeras</string>
+    <string name="Volcan2">Volcan Cumbal</string>
+    <string name="lajas">Iglesia las lajas</string>
+    <string name="carnvales">Carnavales de blancos y negros fechas 2 a 7 de enero</string>
 </resources>
