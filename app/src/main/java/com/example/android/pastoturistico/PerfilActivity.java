@@ -19,6 +19,8 @@ public class PerfilActivity extends AppCompatActivity {
         tUsername = (TextView) findViewById(R.id.tUsename);
         tCorreo= (TextView) findViewById(R.id.tCorreoo);
         Bundle extras= getIntent().getExtras();
+        usuario=extras.getString("usuario");
+        correo=extras.getString("correo");
         tUsername.setText(extras.getString("usuario"));
         tCorreo.setText(extras.getString("correo"));
 
@@ -39,7 +41,6 @@ public class PerfilActivity extends AppCompatActivity {
                 intent = new Intent(PerfilActivity.this, MainActivity.class);
                 intent.putExtra("usuario",usuario);
                 intent.putExtra("correo",correo);
-
                 startActivity(intent);
                 finish();
                 break;

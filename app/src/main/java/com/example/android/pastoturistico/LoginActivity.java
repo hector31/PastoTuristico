@@ -40,11 +40,15 @@ public class LoginActivity extends AppCompatActivity {
         bIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (eUsuario.getText().toString().equals(usuario) && ePassword.getText().toString().equals(contraseña)){
+                if (eUsuario.getText().toString().equals(usuario) && ePassword.getText().toString().equals(contraseña)&&!eUsuario.getText().toString().equals("")&&! ePassword.getText().toString().equals("")){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("usuario",usuario);
                     intent.putExtra("correo",correo);
                     startActivity(intent);
+                    finish();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.error),Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -63,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             //Toast.makeText(this, data.getExtras().getString("usuario"),Toast.LENGTH_SHORT).show();
         }
         if (requestCode == 1234 && resultCode==RESULT_CANCELED){
-            Toast.makeText(this, "Error en login",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getString(R.string.errorLogin ),Toast.LENGTH_SHORT).show();
 
         }
 

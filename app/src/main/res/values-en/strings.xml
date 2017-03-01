@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tourist Pasto</string>
+    <string name="iniciarSes">Login</string>
+    <string name="ciudad">Pasto</string>
+    <string name="Recontraseña">Reenter password</string>
+    <string name="contraseña">password</string>
+    <string name="correo">Mail</string>
+    <string name="registrarse">Sign in</string>
+    <string name="cancelar">Cancel</string>
+    <string name="usuario">User</string>
+    <string name="salir">LOG OUT</string>
+    <string name="perfil">PERFIL</string>
+    <string name="principal">HOME</string>
+    <string name="usuarioo">User:</string>
+    <string name="correoo">Mail:</string>
+    <string name="Lugares">Representative Places and Dates</string>
+    <string name="Volcan1">Galeras Volcano</string>
+    <string name="Volcan2">Cumbal Volcano</string>
+    <string name="lajas">Church of las lajas</string>
+    <string name="carnvales">Carnivals of Negros y Blancos date 2th for 7th of January</string>
+    <string name="error">error password or mail incorrect</string>
+    <string name="errorLogin">error sing in</string>
+    <string name="errorContraseñas">error passwords do not match</string>
+    <string name="errorCampos">one or more fields are empty</string>
+
+
+
+</resources>

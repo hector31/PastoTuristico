@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static android.R.attr.data;
+
 public class MainActivity extends AppCompatActivity {
 //1-splash
 // 2-LoginActivity
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         usuario=extras.getString("usuario");
         correo=extras.getString("correo");
+
     }
 
     @Override
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
                 break;
             case R.id.mLogOut:
                 intent = new Intent(MainActivity.this, LoginActivity.class);

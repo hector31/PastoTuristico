@@ -13,9 +13,14 @@
     <string name="principal">PRINCIPAL</string>
     <string name="usuarioo">Usuario:</string>
     <string name="correoo">Correo:</string>
-    <string name="Lugares">Lugares Representativos</string>
+    <string name="Lugares">Lugares Representativos y Fechas</string>
     <string name="Volcan1">Volcan Galeras</string>
     <string name="Volcan2">Volcan Cumbal</string>
     <string name="lajas">Iglesia las lajas</string>
-    <string name="carnvales">Carnavales de blancos y negros fechas 2 a 7 de enero</string>
+    <string name="carnvales">Carnavales de negros y blancos fechas 2 a 7 de enero</string>
+    <string name="error">error contraseña o correo invalidas</string>
+    <string name="errorLogin">error en registro</string>
+    <string name="errorContraseñas">error las contraseñas no coinciden</string>
+    <string name="errorCampos">uno o mas campos estan vacios</string>
+
 </resources>

@@ -42,10 +42,10 @@ public class RegistroActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent();
                 if(econtraseña.getText().toString().equals("")||ecorreo.getText().toString().equals("")||eusuario.getText().toString().equals("")){
-                    Toast.makeText(getApplicationContext(),"uno o mas campos estan vacios",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.errorCampos ),Toast.LENGTH_SHORT).show();
                 }
                 if(!(econtraseña.getText().toString().equals(erecontraseña.getText().toString()))){
-                    Toast.makeText(getApplicationContext(),"las contraseñas no coinciden",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.errorContraseñas ),Toast.LENGTH_SHORT).show();
                 }
                 if(econtraseña.getText().toString().equals(erecontraseña.getText().toString())&& !econtraseña.getText().toString().equals("")) {
                     intent.putExtra("usuario", eusuario.getText().toString());

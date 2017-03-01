@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="errorInicio" type="id">error contraseña o correo invalidas</item>
+</resources>
