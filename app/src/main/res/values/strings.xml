@@ -23,4 +23,20 @@
     <string name="errorContraseñas">error las contraseñas no coinciden</string>
     <string name="errorCampos">uno o mas campos estan vacios</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hotel1">HOTEL 1</string>
+    <string name="hotel2">HOTEL 2</string>
+    <string name="fragement1">HOTEL 1</string>
+    <string name="fragment2">HOTEL 2</string>
+    <string name="title_activity_hoteles">HotelesActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hoteles">HOTELES</string>
+    <string name="bares">BARES</string>
+    <string name="restaurante">RESTAURANTES</string>
+    <string name="title_activity_restaurantes">RestaurantesActivity</string>
+    <string name="title_activity_bares">BaresActivity</string>
+    <string name="hotel3">HOTEL 3</string>
+
 </resources>

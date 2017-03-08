@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".RegistroActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
@@ -18,7 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".PerfilActivity" />
+        <activity
+            android:name=".HotelesActivity"
+            android:label="@string/title_activity_hoteles"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestaurantesActivity"
+            android:label="@string/title_activity_restaurantes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BaresActivity"
+            android:label="@string/title_activity_bares"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
