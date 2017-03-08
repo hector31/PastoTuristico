@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mLogOut:
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mbares:
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mrestaurante:
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
                 break;
 
         }

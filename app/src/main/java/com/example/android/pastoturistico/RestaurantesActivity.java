@@ -49,6 +49,7 @@ public class RestaurantesActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle( getResources().getString(R.string.restaurantetittle));
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -85,6 +86,7 @@ public class RestaurantesActivity extends AppCompatActivity {
                 intent = new Intent(RestaurantesActivity.this, PerfilActivity.class);
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
+                finish();
                 startActivity(intent);
 
                 break;
@@ -97,8 +99,9 @@ public class RestaurantesActivity extends AppCompatActivity {
                 intent = new Intent(RestaurantesActivity.this, HotelesActivity.class);
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
-                startActivity(intent);
 
+                startActivity(intent);
+                finish();
                 break;
 
             case R.id.mbares:
@@ -107,14 +110,11 @@ public class RestaurantesActivity extends AppCompatActivity {
                 intent.putExtra("correo", correo);
 
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mrestaurante:
-                intent = new Intent(RestaurantesActivity.this, RestaurantesActivity.class);
-                intent.putExtra("usuario", usuario);
-                intent.putExtra("correo", correo);
 
-                startActivity(intent);
                 break;
 
         }
@@ -141,11 +141,11 @@ public class RestaurantesActivity extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position){
-                case 0:HotelFragment tab1=new HotelFragment();
+                case 0:RestauranteUnoFragment tab1=new RestauranteUnoFragment();
                     return tab1;
-                case 1: HotelDosFragment tab2=new HotelDosFragment();
+                case 1: RestauranteDosFragment tab2=new RestauranteDosFragment();
                     return tab2;
-                case 2:HotelFragment tab3 = new HotelFragment();
+                case 2:RestauranteTresFragment tab3 = new RestauranteTresFragment();
                     return  tab3;
                 default:return null;
 

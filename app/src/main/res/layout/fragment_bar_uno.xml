@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/backwhite"
-    tools:context="com.example.android.pastoturistico.RestauranteDosFragment">
+    tools:context="com.example.android.pastoturistico.BarUnoFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -14,12 +14,12 @@
         android:gravity="center"
         android:layout_margin="15dp"
 
-        android:text="@string/res1" />
+        android:text="@string/bar3" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:text="@string/restaurantetext1" />
+        android:text="@string/bartext3" />
 
     <ScrollView
 
@@ -35,7 +35,7 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:src="@drawable/restauranteperufusion"
+                android:src="@drawable/barcapitannirvana"
                 />
 
             <ImageView
@@ -43,13 +43,13 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:src="@drawable/restauranteperufusion2" />
+                android:src="@drawable/barcapitannirvana1" />
 
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:src="@drawable/restauranteperufusion1"
+                android:src="@drawable/barcapitannirvana2"
                 />
         </LinearLayout>
 

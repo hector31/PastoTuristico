@@ -49,6 +49,29 @@ public class PerfilActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 break;
+            case R.id.mhoteles:
+                intent = new Intent(PerfilActivity.this, HotelesActivity.class);
+                intent.putExtra("usuario", usuario);
+                intent.putExtra("correo", correo);
+                startActivity(intent);
+                finish();
+
+                break;
+            case R.id.mbares:
+                intent = new Intent(PerfilActivity.this, BaresActivity.class);
+                intent.putExtra("usuario", usuario);
+                intent.putExtra("correo", correo);
+                startActivity(intent);
+                finish();
+
+                break;
+            case R.id.mrestaurante:
+                intent = new Intent(PerfilActivity.this, RestaurantesActivity.class);
+                intent.putExtra("usuario", usuario);
+                intent.putExtra("correo", correo);
+                startActivity(intent);
+                finish();
+                break;
         }
         return true;
     }

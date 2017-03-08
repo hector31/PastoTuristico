@@ -49,6 +49,7 @@ public class BaresActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle( getResources().getString(R.string.barestittle));
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -85,8 +86,9 @@ public class BaresActivity extends AppCompatActivity {
                 intent = new Intent(BaresActivity.this, PerfilActivity.class);
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
-                startActivity(intent);
 
+                startActivity(intent);
+                finish();
                 break;
             case R.id.mLogOut:
                 intent = new Intent(BaresActivity.this, LoginActivity.class);
@@ -97,16 +99,13 @@ public class BaresActivity extends AppCompatActivity {
                 intent = new Intent(BaresActivity.this, HotelesActivity.class);
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
-                startActivity(intent);
 
+                startActivity(intent);
+                finish();
                 break;
 
             case R.id.mbares:
-                intent = new Intent(BaresActivity.this, BaresActivity.class);
-                intent.putExtra("usuario", usuario);
-                intent.putExtra("correo", correo);
 
-                startActivity(intent);
 
                 break;
             case R.id.mrestaurante:
@@ -115,6 +114,7 @@ public class BaresActivity extends AppCompatActivity {
                 intent.putExtra("correo", correo);
 
                 startActivity(intent);
+                finish();
                 break;
 
         }
@@ -140,11 +140,11 @@ public class BaresActivity extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position){
-                case 0:HotelFragment tab1=new HotelFragment();
+                case 0:BarUnoFragment tab1=new BarUnoFragment();
                     return tab1;
-                case 1: HotelDosFragment tab2=new HotelDosFragment();
+                case 1: BarDosFragment tab2=new BarDosFragment();
                     return tab2;
-                case 2:HotelFragment tab3 = new HotelFragment();
+                case 2: BarTresFragment tab3 = new BarTresFragment();
                     return  tab3;
                 default:return null;
 

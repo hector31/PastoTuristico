@@ -25,8 +25,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hotel1">HOTEL 1</string>
-    <string name="hotel2">HOTEL 2</string>
+    <string name="hotel1">HOTEL DEL PARQUE</string>
+    <string name="hotel2">HOTEL FERNANDO PLAZA</string>
     <string name="fragement1">HOTEL 1</string>
     <string name="fragment2">HOTEL 2</string>
     <string name="title_activity_hoteles">HotelesActivity</string>
@@ -37,6 +37,25 @@
     <string name="restaurante">RESTAURANTES</string>
     <string name="title_activity_restaurantes">RestaurantesActivity</string>
     <string name="title_activity_bares">BaresActivity</string>
-    <string name="hotel3">HOTEL 3</string>
+    <string name="hotel3">HOTEL TORRES DEL BOSQUE</string>
+    <string name="bar1">BAR COYOTE UGLY</string>
+    <string name="bar2">BAR TERRAZA LA MERCED</string>
+    <string name="bar3">CAPITAN NIRVANA</string>
+    <string name="res1">PERU FUSION</string>
+    <string name="res2">RESTAURANTE SAUSALITO</string>
+    <string name="res3">RESTAURANTE TIPICUY</string>
+    <string name="bartext1">Dirección: Calle 18 # 29-91 Parque Infantil Loc.7, Pasto, Nariño
+Teléfono: 300 4068004</string>
+    <string name="bartext2">Direccion\t Cra 36 #12-14 B/ La Aurora Pasto, Narino Celular\t310 4229354 Website\thttp://www.lamerced.com.co/</string>
+    <string name="bartext3">Dirección: Cra. 27, Pasto, Nariño Teléfono: (2) 7294120</string>
+    <string name="hoteltext1">Dirección: Carrera 21 #9 -11, Parque Bolivar, Pasto, Nariño Teléfono: (2) 7204585</string>
+    <string name="hoteltext2">Hotel de 3 estrellas Dirección: No. Centro, Cl. 21 #2116, Pasto, Nariño Teléfono: (2) 7291432</string>
+    <string name="hoteltext3">Dirección: Cra. 44 #18-12, Pasto, Nariño Teléfono: 313 6850763</string>
+    <string name="restaurantetext1">Dirección: # a 19a-85,, Cra. 33 #191, Pasto, Nariño</string>
+    <string name="restaurantetext2"><![CDATA[Restaurante especializado en filetes   Dirección: Cra 35a #20-63 | La Riviera, Pasto 540000, Colombia Ubicación: América del Sur  >  Colombia  >  Departamento de Nariño  >  Pasto Teléfono: 573005620608]]></string>
+    <string name="restaurantetext3">Dirección: # a 50-144,, Cl. 18 #50142, Pasto, Nariño Teléfono: (2) 7317604   Especialidad platos tipicos</string>
+    <string name="hoteltittle">MEJORES HOTELES</string>
+    <string name="barestittle">MEJORES BARES</string>
+    <string name="restaurantetittle">MEJORES RESTAURANTES</string>
 
 </resources>

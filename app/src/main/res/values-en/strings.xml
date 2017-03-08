@@ -24,6 +24,30 @@
     <string name="errorContraseñas">error passwords do not match</string>
     <string name="errorCampos">one or more fields are empty</string>
 
+    <string name="hoteles">HOTELS</string>
+    <string name="bares">PUBS</string>
+    <string name="restaurante">RESTAURANTS</string>
+    <string name="hotel3">TORRES DEL BOSQUE HOTEL</string>
+    <string name="bar1">COYOTE UGLY PUB</string>
+    <string name="bar2">TERRAZA LA MERCED BAR</string>
+    <string name="bar3">CAPITAN NIRVANA</string>
+    <string name="res1">PERU FUSION</string>
+    <string name="res2">SAUSALITO RESTAURANT</string>
+    <string name="res3">TIPICUY RESTAURANT</string>
+    <string name="bartext1">ADDRESS: Calle 18 # 29-91 Parque Infantil Loc.7, Pasto, Nariño
+PHONE: 300 4068004</string>
+    <string name="bartext2">ADDRESS\t Cra 36 #12-14 B/ La Aurora Pasto, Narino PHONE\t310 4229354 Website\thttp://www.lamerced.com.co/</string>
+    <string name="bartext3">ADDRESS: Cra. 27, Pasto, Nariño PHONE: (2) 7294120</string>
+    <string name="hoteltext1">ADDRESS: Carrera 21 #9 -11, Parque Bolivar, Pasto, Nariño Teléfono: (2) 7204585</string>
+    <string name="hoteltext2">Hotel de 3 estrellas Dirección: No. Centro, Cl. 21 #2116, Pasto, Nariño Teléfono: (2) 7291432</string>
+    <string name="hoteltext3">ADDRESS: Cra. 44 #18-12, Pasto, Nariño PHONE: 313 6850763</string>
+    <string name="restaurantetext1">ADDRESS: # a 19a-85,, Cra. 33 #191, Pasto, Nariño</string>
+    <string name="restaurantetext2"> ADDRESS: Cra 35a #20-63 | La Riviera, Pasto 540000, Colombia LOCATION: América del Sur  >  Colombia  >  Departamento de Nariño  >  Pasto PHONE: 573005620608</string>
+    <string name="restaurantetext3">ADDRESSS: # a 50-144,, Cl. 18 #50142, Pasto, Nariño PHONE: (2) 7317604   </string>
+    <string name="hoteltittle">THE BEST HOTELS</string>
+    <string name="barestittle">THE BEST PUBS</string>
+    <string name="restaurantetittle">THE BEST RESTAURANTS</string>
+
 
 
 </resources>

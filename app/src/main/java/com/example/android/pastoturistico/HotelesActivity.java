@@ -49,6 +49,9 @@ public class HotelesActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle( getResources().getString(R.string.hoteltittle));
+
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -85,6 +88,7 @@ public class HotelesActivity extends AppCompatActivity {
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mLogOut:
@@ -93,10 +97,6 @@ public class HotelesActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.mhoteles:
-            intent = new Intent(HotelesActivity.this, HotelesActivity.class);
-            intent.putExtra("usuario", usuario);
-            intent.putExtra("correo", correo);
-            startActivity(intent);
 
             break;
 
@@ -106,6 +106,7 @@ public class HotelesActivity extends AppCompatActivity {
                 intent.putExtra("correo", correo);
 
                 startActivity(intent);
+                finish();
 
                 break;
             case R.id.mrestaurante:
@@ -114,6 +115,7 @@ public class HotelesActivity extends AppCompatActivity {
                 intent.putExtra("correo", correo);
 
                 startActivity(intent);
+                finish();
                 break;
 
         }

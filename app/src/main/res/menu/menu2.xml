@@ -6,4 +6,13 @@
     <item
         android:id="@+id/mLogOut"
         android:title="@string/salir"/>
+    <item
+        android:id="@+id/mhoteles"
+        android:title="@string/hoteles"/>
+    <item
+        android:id="@+id/mbares"
+        android:title="@string/bares"/>
+    <item
+        android:id="@+id/mrestaurante"
+        android:title="@string/restaurante"/>
 </menu>
