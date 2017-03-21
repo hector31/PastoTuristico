@@ -57,5 +57,12 @@ Teléfono: 300 4068004</string>
     <string name="hoteltittle">MEJORES HOTELES</string>
     <string name="barestittle">MEJORES BARES</string>
     <string name="restaurantetittle">MEJORES RESTAURANTES</string>
+    <string name="parque1">Parque Bolivar</string>
+    <string name="descripcion">parque visitar en familia</string>
+    <string name="direccion">carrera 15 # 16-50</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
