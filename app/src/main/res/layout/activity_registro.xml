@@ -10,7 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:background="@drawable/back"
-    tools:context="com.example.android.pastoturistico.RegistroActivity">
+    tools:context="com.example.android.pastoturistico.RegistroActivity"
+
+    >
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,16 +66,8 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:orientation="horizontal"
+     android:layout_gravity="center"
      >
-
-     <Button
-         android:layout_width="wrap_content"
-         android:layout_margin="20dp"
-         android:layout_height="wrap_content"
-         android:gravity="center"
-         android:id="@+id/registro2"
-         android:background="@color/lightblue"
-         android:text="@string/registrarse"/>
      <Button
          android:layout_width="wrap_content"
          android:layout_margin="20dp"
@@ -79,6 +76,16 @@
          android:background="@color/lightblue"
          android:id="@+id/cancel"
          android:text="@string/cancelar"/>
+
+     <Button
+         android:id="@+id/registro2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="20dp"
+         android:translationX="20dp"
+         android:background="@color/lightblue"
+         android:gravity="center"
+         android:text="@string/registrarse" />
 
 
  </LinearLayout>

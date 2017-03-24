@@ -6,13 +6,12 @@ package com.example.android.pastoturistico;
 
 public class Lista_Entrada {
     private int idImage;
-    private String nombre,descrip,direccion;
+    private String nombre,descrip;
 
-    public Lista_Entrada(int idImage, String nombre, String descrip, String direccion) {
+    public Lista_Entrada(int idImage, String nombre, String descrip) {
         this.idImage = idImage;
         this.nombre = nombre;
         this.descrip = descrip;
-        this.direccion = direccion;
     }
 
     public int getIdImage() {
@@ -27,10 +26,6 @@ public class Lista_Entrada {
         return descrip;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
     public void setIdImage(int idImage) {
         this.idImage = idImage;
     }
@@ -41,10 +36,6 @@ public class Lista_Entrada {
 
     public void setDescrip(String descrip) {
         this.descrip = descrip;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
     }
 
 }

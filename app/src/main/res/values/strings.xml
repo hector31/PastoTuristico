@@ -64,5 +64,20 @@ Teléfono: 300 4068004</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_hotel_drawer">HotelDrawerActivity</string>
+    <string name="title_activity_restaurante_drawer">RestauranteDrawerActivity</string>
+    <string name="title_activity_perfil_drawer">PerfilDrawerActivity</string>
+    <string name="extras">EXTRAS</string>
+    <string name="title_activity_main_drawer">MainDrawerActivity</string>
+    <string name="title_activity_extra_drawer">ExtraDrawerActivity</string>
+    <string name="title_activity_historia_extra_drawe">HistoriaExtraDraweActivity</string>
+    <string name="historiaPasto">El área del municipio de Pasto fue habitada por los indígenas Pastos antes de la conquista española. No existe unanimidad y certeza entre los historiadores y cronistas sobre el fundador y la fecha exacta de fundación de la ciudad que inicialmente se llamó Villaviciosa de la Concepción de la Provincia de Hatunllacta. La ciudad fue fundada dos veces. La primera fundación algunos historiadores consideran fue realizada por el adelantado Sebastián de Belalcázar en 1537 y en el sitio que hoy es ocupado por la población de Yacuanquer; el traslado posterior a su situación actual en el Valle de Atriz, o segunda fundación, la llevó a cabo Lorenzo de Aldana cuando llegó a pacificar la región en 1539. Otros historiadores mencionan a Pedro de Puelles como el fundador que fue el primer teniente de gobernador de la ciudad y se menciona también al capitán Rodrigo de Ocampo, así como al Capitán Gonzalo Díaz de Pineda.</string>
+    <string name="historia">HISTORIA DE PASTO</string>
+    <string name="title_activity_artesania_extra_drawer">ArtesaniaExtraDrawerActivity</string>
+    <string name="artesania">ARTESANIA</string>
+    <string name="artesaniadoc">Los artesanos pastusos de marroquinería así como de la madera, ebanistas y talladores, son famosos desde la época de la colonia.  Pero la más característica y original de las manifestaciones culturales y artesanales de los pastusos es la elaboración de utensilios de madera tallada y cubierta con una resina obtenida del fruto de un arbusto de la selva andina, llamado Mopa - Mopa; utilizan una técnica refinada manual que data del periodo prehispánico, conocida como Barniz de Pasto. El refinamiento alcanzado permite obtener objetos utilitarios o decorativos de gran belleza y mérito artístico que trascienden lo artesanal.  Igualmente es muy característica de la ciudad la artesanía de enchapado en tamo de objetos de madera usando delgadas láminas vegetales coloreadas, obtenidas de la paja de cereales y con las cuales se elaboran dibujos y figuras con resultados semejantes a los de la taracea o marquetería.</string>
+    <string name="title_activity_gastronomia_extra_drawer">GastronomiaExtraDrawerActivity</string>
+    <string name="gastronomia">Gastronomia</string>
+    <string name="gastronomiadoc">Los platos representativos de la gastronomía típica de San Juan de Pasto (Colombia) son el producto del mestizaje, y la expresión de la fertilidad de las tierras y de la laboriosidad de la gente. El plato más representativo es el cuy asado a la brasa y que el 7 de enero se celebra en el festival del cuy en el corregimiento de Obonuco como culminación del Carnaval de Negros y Blancos. Entre los postres más destacados se destacan el helado de paila y el dulce de chilacuán, y amasijos como los quimbolitos y las empanadas de añejo.  Una de sus bebidas representativas y típicas son los llamados \"hervidos\", que, como su nombre hace referencia, es una bebida caliente a base de jugo de frutas que puede ser de lulo, mora o maracuyá con un toque final de licor artesanal llamado \"chapil\" o aguardiente.</string>
 
 </resources>

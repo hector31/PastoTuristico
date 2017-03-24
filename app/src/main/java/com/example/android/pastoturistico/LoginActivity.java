@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (eUsuario.getText().toString().equals(usuario) && ePassword.getText().toString().equals(contraseña)&&!eUsuario.getText().toString().equals("")&&! ePassword.getText().toString().equals("")){
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainDrawerActivity.class);
                     intent.putExtra("usuario",usuario);
                     intent.putExtra("correo",correo);
                     startActivity(intent);

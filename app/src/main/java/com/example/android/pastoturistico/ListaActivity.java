@@ -2,7 +2,6 @@ package com.example.android.pastoturistico;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,10 +19,10 @@ import android.widget.Toast;
 public class ListaActivity extends AppCompatActivity {
   //  String [] parques = new String[] {"Bolivar ","infantil","lajas","San Fransisco"};
     private Lista_Entrada[] datos =new Lista_Entrada[]{
-          new Lista_Entrada(R.drawable.volcancumbal,"Parque Bolivar","parque compartir con familia","cra 15#16-50"),
-          new Lista_Entrada(R.drawable.lajas,"Parque las lajas","parque compartir con familia","cra 15#44-30"),
-          new Lista_Entrada(R.drawable.pasto,"Parque pasto","parque compartir ","cra 25#34-10"),
-          new Lista_Entrada(R.drawable.pasto2,"Parque pasto2","parque compartir dos ","cra 115#24-40")};
+          new Lista_Entrada(R.drawable.historia_opt,"Historia Pasto","Conozco un poco de la historia de pasto"),
+          new Lista_Entrada(R.drawable.lajas,"Parque las lajas","parque compartir con familia"),
+          new Lista_Entrada(R.drawable.pasto,"Parque pasto","parque compartir "),
+          new Lista_Entrada(R.drawable.pasto2,"Parque pasto2","parque compartir dos ")};
 
 
     ListView list;
@@ -42,10 +41,11 @@ public class ListaActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 String data = ((Lista_Entrada) parent.getItemAtPosition(position)).getNombre();
                 Toast.makeText(getApplicationContext(), data, Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(ListaActivity.this, DrawerActivity.class);
+                Intent intent = new Intent(ListaActivity.this, BarDrawerActivity.class);
                 startActivity(intent);
 
             }
@@ -74,9 +74,6 @@ public class ListaActivity extends AppCompatActivity {
 
             TextView descrip = (TextView) item.findViewById(R.id.descrip);
             descrip.setText(datos[position].getDescrip());
-
-            TextView direc = (TextView) item.findViewById(R.id.dir);
-            direc.setText(datos[position].getDireccion());
 
             ImageView imagen= (ImageView) item.findViewById(R.id.foto);
             imagen.setImageResource(datos[position].getIdImage());

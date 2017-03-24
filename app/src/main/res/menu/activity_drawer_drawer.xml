@@ -3,33 +3,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/mPrincipal"
+            android:icon="@android:drawable/ic_menu_crop"
+            android:title="@string/principal" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/mbares"
+            android:icon="@android:drawable/ic_lock_silent_mode_off"
+            android:title="@string/bares" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/mrestaurante"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="@string/restaurante" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/mhoteles"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/hoteles" />
+
+
+        <item
+            android:id="@+id/mextras"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/extras" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Cuenta">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/mPerfil"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/perfil" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/mLogOut"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/salir" />
+
         </menu>
     </item>
 

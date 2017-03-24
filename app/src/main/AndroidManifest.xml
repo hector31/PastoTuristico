@@ -11,7 +11,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistroActivity" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".PerfilActivity" />
         <activity
             android:name=".HotelesActivity"
@@ -25,20 +31,43 @@
             android:name=".BaresActivity"
             android:label="@string/title_activity_bares"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ListaActivity">
-
-        </activity>
+        <activity android:name=".ListaActivity" />
         <activity
-            android:name=".DrawerActivity"
+            android:name=".BarDrawerActivity"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotelDrawerActivity"
+            android:label="@string/title_activity_hotel_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestauranteDrawerActivity"
+            android:label="@string/title_activity_restaurante_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PerfilDrawerActivity"
+            android:label="@string/title_activity_perfil_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainDrawerActivity"
+            android:label="@string/title_activity_main_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExtraDrawerActivity"
+            android:label="@string/title_activity_extra_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistoriaExtraDraweActivity"
+            android:label="@string/title_activity_historia_extra_drawe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArtesaniaExtraDrawerActivity"
+            android:label="@string/title_activity_artesania_extra_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GastronomiaExtraDrawerActivity"
+            android:label="@string/title_activity_gastronomia_extra_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
