@@ -79,5 +79,9 @@ Teléfono: 300 4068004</string>
     <string name="title_activity_gastronomia_extra_drawer">GastronomiaExtraDrawerActivity</string>
     <string name="gastronomia">Gastronomia</string>
     <string name="gastronomiadoc">Los platos representativos de la gastronomía típica de San Juan de Pasto (Colombia) son el producto del mestizaje, y la expresión de la fertilidad de las tierras y de la laboriosidad de la gente. El plato más representativo es el cuy asado a la brasa y que el 7 de enero se celebra en el festival del cuy en el corregimiento de Obonuco como culminación del Carnaval de Negros y Blancos. Entre los postres más destacados se destacan el helado de paila y el dulce de chilacuán, y amasijos como los quimbolitos y las empanadas de añejo.  Una de sus bebidas representativas y típicas son los llamados \"hervidos\", que, como su nombre hace referencia, es una bebida caliente a base de jugo de frutas que puede ser de lulo, mora o maracuyá con un toque final de licor artesanal llamado \"chapil\" o aguardiente.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="UBICACIONESH">UBICACIONES DE LOS HOTELES</string>
+    <string name="UBICACIONESR">UBICACIONES DE LOS RESTAURANTES</string>
+    <string name="UBICACIONESB">UBICACIONES DE LOS BARES</string>
 
 </resources>

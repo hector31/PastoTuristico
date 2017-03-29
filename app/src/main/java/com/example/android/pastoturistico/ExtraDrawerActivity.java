@@ -2,6 +2,7 @@ package com.example.android.pastoturistico;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -36,6 +37,8 @@ public class ExtraDrawerActivity extends AppCompatActivity
     String usuario="",correo="";
     Intent intent;
     TextView tUsername,tCorreo;
+    SharedPreferences prefers;
+    SharedPreferences.Editor editor;
 
     ListView list;
 
@@ -48,6 +51,9 @@ public class ExtraDrawerActivity extends AppCompatActivity
         Bundle extras = getIntent().getExtras();
         usuario=extras.getString("usuario");
         correo=extras.getString("correo");
+        prefers= getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor= prefers.edit();
+
 
         setTitle( getResources().getString(R.string.extras));
 
@@ -177,6 +183,8 @@ public class ExtraDrawerActivity extends AppCompatActivity
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                editor.putInt("login",-1);//1 loggeado 0 sin loggear nadie
+                editor.commit();
                 startActivity(intent);
                 finish();
                 break;

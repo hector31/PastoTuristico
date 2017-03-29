@@ -1,6 +1,7 @@
 package com.example.android.pastoturistico;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,6 +21,8 @@ public class HistoriaExtraDraweActivity extends AppCompatActivity
     String usuario="",correo="";
     Intent intent;
     TextView tUsername,tCorreo;
+    SharedPreferences prefers;
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,8 @@ public class HistoriaExtraDraweActivity extends AppCompatActivity
         Bundle extras = getIntent().getExtras();
         usuario=extras.getString("usuario");
         correo=extras.getString("correo");
+        prefers= getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor= prefers.edit();
 
         setTitle( getResources().getString(R.string.historia));
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -115,6 +120,8 @@ public class HistoriaExtraDraweActivity extends AppCompatActivity
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                editor.putInt("login",-1);//1 loggeado 0 sin loggear nadie
+                editor.commit();
                 startActivity(intent);
                 finish();
                 break;

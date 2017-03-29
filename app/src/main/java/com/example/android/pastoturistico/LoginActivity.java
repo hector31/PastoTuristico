@@ -1,6 +1,7 @@
 package com.example.android.pastoturistico;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,17 +17,35 @@ public class LoginActivity extends AppCompatActivity {
     Button bIniciar;
     TextView tRegistrarse;
     String usuario="",contraseña="",correo="";
+    SharedPreferences prefers;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        prefers= getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor= prefers.edit();
+
         eUsuario= (EditText) findViewById(R.id.username);
         ePassword=(EditText) findViewById(R.id.password);
         bIniciar= (Button) findViewById(R.id.iniciar);
         tRegistrarse=(TextView) findViewById(R.id.registro);
 
+        usuario=prefers.getString("username","");
+        contraseña=prefers.getString("password","");
+        correo=prefers.getString("correo","");
+
+        Log.d("login",String.valueOf(prefers.getInt("login",-1)));
+        Log.d("nombre",prefers.getString("username","noname"));
+
+        if(prefers.getInt("login",-1)==1){
+            Intent intent = new Intent(LoginActivity.this, MainDrawerActivity.class);
+            intent.putExtra("usuario",usuario);
+            intent.putExtra("correo",correo);
+            startActivity(intent);
+        }
 
         tRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this, MainDrawerActivity.class);
                     intent.putExtra("usuario",usuario);
                     intent.putExtra("correo",correo);
+                    editor.putInt("login",1);//1 loggeado 0 sin loggear nadie
+                    editor.commit();
                     startActivity(intent);
                     finish();
                 }
@@ -63,7 +84,11 @@ public class LoginActivity extends AppCompatActivity {
             usuario = data.getExtras().getString("usuario");
             contraseña = data.getExtras().getString("contraseña");
             correo=data.getExtras().getString("correo");
-            Log.d("nombre",data.getExtras().getString("usuario"));//para saber si esta pasando por consola los datos
+            editor.putString("username",usuario);
+            editor.putString("password",contraseña);
+            editor.putString("correo",correo);
+
+            //Log.d("nombre",data.getExtras().getString("usuario"));//para saber si esta pasando por consola los datos
             //Toast.makeText(this, data.getExtras().getString("usuario"),Toast.LENGTH_SHORT).show();
         }
         if (requestCode == 1234 && resultCode==RESULT_CANCELED){

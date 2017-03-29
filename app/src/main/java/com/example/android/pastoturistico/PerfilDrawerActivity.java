@@ -1,6 +1,7 @@
 package com.example.android.pastoturistico;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,6 +23,8 @@ public class PerfilDrawerActivity extends AppCompatActivity
     TextView tUsername,tCorreo,t2Username,t2Correo;
     Intent intent;
     String usuario="",correo="";
+    SharedPreferences prefers;
+    SharedPreferences.Editor editor;
 
 
     /**
@@ -46,6 +49,9 @@ public class PerfilDrawerActivity extends AppCompatActivity
         correo=extras.getString("correo");
         tUsername.setText(extras.getString("usuario"));
         tCorreo.setText(extras.getString("correo"));
+
+        prefers= getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor= prefers.edit();
 
 
 
@@ -137,6 +143,8 @@ public class PerfilDrawerActivity extends AppCompatActivity
                 intent.putExtra("usuario", usuario);
                 intent.putExtra("correo", correo);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                editor.putInt("login",-1);//1 loggeado 0 sin loggear nadie
+                editor.commit();
                 startActivity(intent);
                 finish();
                 break;
